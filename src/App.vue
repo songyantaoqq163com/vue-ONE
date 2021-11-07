@@ -6,13 +6,12 @@
 
 <script>
 export default {
-  name: "App",
   data: () => ({
-    //
   }),
- created() {}
-  
-};
+  name: 'App',
+  created () {}
+
+}
 </script>
 
 <style>
@@ -26,7 +25,7 @@ html, body {
   border:1px solid red;
    /* width: 500px;
   height: 400px; */
-  margin:5px; 
+  margin:5px;
   /* float: left; */
   /* display: inline-block; */
 }
