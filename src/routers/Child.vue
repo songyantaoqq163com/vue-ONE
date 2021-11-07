@@ -21,7 +21,6 @@ export default {
   },
   mounted () {
     Bus.$on('elswitch', val => {
-      console.log(28, val)
       this.menufalse = val
     })
     // this.valuetwo();
