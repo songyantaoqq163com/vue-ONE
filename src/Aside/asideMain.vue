@@ -11,7 +11,8 @@
       </el-col>
       <multipane-resizer></multipane-resizer>
       <el-col :span="span21" class="Mainright">
-          <Breadcrumb :levelListdata="levelList"></Breadcrumb>
+          <vTag :levelListdata="levelList"></vTag>
+          <!-- <Breadcrumb :levelListdata="levelList"></Breadcrumb> -->
         <el-scrollbar>
           <div class="routerview">
             <router-view />
@@ -24,13 +25,15 @@
 </template>
 <script>
 import {Multipane, MultipaneResizer} from 'vue-multipane';
-import Breadcrumb from "./Breadcrumb.vue"
+// import Breadcrumb from "./Breadcrumb.vue"
+import vTag from '../Asidemodule/Tag.vue'
 import AMChild from "./AMChild";
 import conmheader from "@/js/conmheader";
 export default {
   name: "asideMain",
   components: {
-    Breadcrumb,
+    // Breadcrumb,
+    vTag,
     AMChild,
     Multipane,
     MultipaneResizer
@@ -89,7 +92,7 @@ export default {
 .routerview{
   margin: 15px;
   padding: 15px;
-  height: calc(100vh - 210px);
+  height: calc(100vh - 225px);
       overflow-y: auto;
   box-shadow:0 0 20px 5px #d3dce6; 
 }

@@ -15,7 +15,6 @@ class FrameworkConlist {
 
     findMenuPath(path, menuone, resultone) {
         const list = menuone != null ? menuone : this.menulist;
-        console.log('conmheader.js', path);
         for (let i = 0; i < list.length; i++) {
             const m = list[i];
             if (m.child && m.child.length > 0) {

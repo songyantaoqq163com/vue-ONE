@@ -11,7 +11,7 @@
   </div>
 </template>
 <script>
-import Header from '@/header/header'
+import Header from '@/Aside/header'
 import AsideMain from '@/Aside/asideMain'
 // import Aside from "@/Aside/aside";
 export default {
@@ -30,7 +30,6 @@ export default {
   },
   mounted () {
     setTimeout(() => {
-      console.log('home.vue高度', this, this.$refs.elemain.$el.offsetHeight)
       // this.tableHeight = this.$el.offsetParent.firstChild.clientHeight - this.$refs.form.$el.clientHeight-5;
     }, 100)
   },

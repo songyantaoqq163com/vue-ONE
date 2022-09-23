@@ -8,7 +8,6 @@
 //         }
 //     }
 // }
-
 const test =require('./data/test.json');//引入test.json
 module.export = {
     devServer:{

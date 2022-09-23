@@ -40,7 +40,7 @@ Vue.use(vueTost)
 
 import echarts from 'echarts'
 // import html2canvas from 'html2canvas'
-import ElementUI from 'element-ui';
+import ElementUI, { Form } from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import CountDown from 'vue2-countdown';
 import Mock from 'mockjs';//加载mockServer
@@ -50,12 +50,17 @@ import vueInfinite from 'vue-infinite-scroll'
 // import G6 from '@antv/g6'
 import VueParticles from 'vue-particles'
 import Canvas from 'canvas'
+// npm install vue-contextmenu --save鼠标右键
+// npm install vue-contextmenujs
+import Contextmenu from "vue-contextmenujs"
+
 
 const originalPush = VueRouter.prototype.push
 VueRouter.prototype.push = function push(location) {
   return originalPush.call(this, location).catch(err => err)
 }//这三段代码阻止了菜单多次点击报错的问题
 
+Vue.use(Contextmenu)
 Vue.use(Canvas)
 Vue.use(VueParticles)
 // Vue.prototype.$G6=G6

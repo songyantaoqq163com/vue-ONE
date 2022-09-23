@@ -1,35 +1,40 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/shouye/HelloWorld'
-import infoPlain from "@/components/shouye/infoPlain"
-import plain1 from "@/components/shouye/plain1"
-import info from "@/components/shouye/info"
-import NEWnew from "@/components/shouye/NEWnew"
+import HelloWorld from '@/components/Comfirst/HelloWorld'
+import NEWnew from "@/components/Comfirst/NEWnew"
+import infoPlain from "@/components/Comfirst/infoPlain"
+import plain1 from "@/components/Comfirst/plain1"
+import info from "@/components/Comfirst/info"
+import derive from "@/components/Comfirst/derive"
+import calendar from "@/components/Comfirst/calendar"
+import Round from "@/components/Comfirst/Round"
+import prop from "@/components/Comfirst/prop"
+import Roll from "@/components/Comfirst/roll"
+import echarts from "@/components/Comfirst/Echarts"
+import echartsone from '@/components/Comfirst/Echarts1'
+import newroll from "@/components/Comfirst/newroll"
+import hover from "@/components/Comfirst/hover"
+import vuextext from "@/components/Comfirst/vuextext"
+
+import Xialakuang from "@/components/Comsecond/Xialakuang"
+import Wendang from "@/components/Comsecond/Wendang"
+import Text from "@/components/Comsecond/Text"
+import qie from "@/components/Comsecond/qie"
+import videpplay from "@/components/Comsecond/videpplay"
+import Child from "@/components/Comsecond/Child"
+import MaxChild from "@/components/Comsecond/MaxChild"
+import antv from "@/components/Comsecond/antv"
+
 
 import elmean from "@/components/elmean"
 import plain from "@/routers/Plain"
-import Child from "@/routers/Child"
-import MaxChild from "@/routers/MaxChild"
+
+
 import Home from "@/Aside/Home"
 import Login from "@/Aside/Login"
 
-import derive from "@/components/firstone/derive"
-import calendar from "@/components/firstone/calendar"
-import Round from "@/components/firstone/Round"
-import echarts from "@/components/firstone/Echarts"
-import echartsone from '@/components/firstone/Echarts1'
-import Roll from "@/components/firstone/roll"
-import prop from "@/components/firstone/prop"
-import newroll from "@/components/firstone/newroll"
-import hover from "@/components/firstone/hover"
-import vuextext from "@/components/firstone/vuextext"
 
-import Xialakuang from "@/components/secondtwo/Xialakuang"
-import Wendang from "@/components/secondtwo/Wendang"
-import Text from "@/components/secondtwo/Text"
-import qie from "@/components/secondtwo/qie"
-import videpplay from "@/components/secondtwo/videpplay"
-import antv from "@/components/secondtwo/antv"
+
 
 import Breadcrumb from "@/element/Breadcrumb"
 import eleinput from "@/element/eleinput"
@@ -318,7 +323,7 @@ let router = new Router({
   // mode:"history" 
 });
 router.beforeEach((to, from, next) => {
-  console.log('index.js', from)
+  // console.log('index.js', from)
   if (to.meta.requireAuth == true) {
     if (sessionStorage.getItem('key-token') != null) {
       next()

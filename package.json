@@ -23,6 +23,7 @@
     "vue": "^2.5.2",
     "vue-awesome-swiper": "^4.1.1",
     "vue-canvas": "0.0.1",
+    "vue-contextmenujs": "^1.3.13",
     "vue-cookies": "^1.7.4",
     "vue-echarts": "^5.0.0-beta.0",
     "vue-infinite-scroll": "^2.0.2",

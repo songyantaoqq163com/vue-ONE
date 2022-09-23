@@ -12,7 +12,7 @@
   </div>
 </template>
 <script>
-import menutree from "./menutree";
+import menutree from "../Asidemodule/menutree";
 import conmheader from "@/js/conmheader";
 
 export default {
@@ -232,7 +232,6 @@ export default {
     },
 
     handleSelect(index, indexPath) {
-      console.log("AMChild.vue", index, indexPath);
       this.indexBreadcrumbs = indexPath; // indexPath为一个数组，里面包含选中的菜单，和菜单的index标识
       sessionStorage.setItem("keylist", index); //存储
     },
