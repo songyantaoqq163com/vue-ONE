@@ -11,7 +11,7 @@ export default {
     //
   }),
  created() {}
-  
+
 };
 </script>
 
@@ -26,7 +26,7 @@ html, body {
   border:1px solid red;
    /* width: 500px;
   height: 400px; */
-  margin:5px; 
+  margin:5px;
   /* float: left; */
   /* display: inline-block; */
 }
@@ -73,5 +73,8 @@ html, body {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 255, 255, 0.3);
+}
+.el-submenu__title,.el-menu-item{
+  text-align: left!important;
 }
 </style>
