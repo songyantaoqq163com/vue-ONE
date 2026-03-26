@@ -22,12 +22,12 @@ import store from './vuex/store'//引入vuex
 // Vue.use(getBanners)
 // import axios from 'axios'
 import axios from './js/http'
-axios.defaults.baseURL = "https://www.51tagger.com/maxwell-report"; // 关键步骤–填写后台请求统一的地址
+axios.defaults.baseURL = "https://dev.51tagger.com/maxwell-report"; // 关键步骤–填写后台请求统一的地址
 // axios.defaults.headers.get['Content-Type'] = 'application/json';
 Vue.prototype.$axios=axios
 Vue.config.productionTip=false
 
-import vueTost from 'zkr-drag'
+// import vueTost from 'zkr-drag'
 import VideoPlayer from 'vue-video-player'
 import vueSeamlessScroll from 'vue-seamless-scroll' //滚动插件
 
@@ -36,7 +36,7 @@ require('video.js/dist/video-js.css')
 require('vue-video-player/src/custom-theme.css')
 Vue.use(vueSeamlessScroll)
 Vue.use(VideoPlayer)
-Vue.use(vueTost)
+// Vue.use(vueTost)
 
 import echarts from 'echarts'
 // import html2canvas from 'html2canvas'
@@ -49,7 +49,7 @@ import VueRouter from 'vue-router';
 import vueInfinite from 'vue-infinite-scroll'
 // import G6 from '@antv/g6'
 import VueParticles from 'vue-particles'
-import Canvas from 'canvas'
+// import Canvas from 'canvas'
 // npm install vue-contextmenu --save鼠标右键
 // npm install vue-contextmenujs
 import Contextmenu from "vue-contextmenujs"
@@ -61,7 +61,7 @@ VueRouter.prototype.push = function push(location) {
 }//这三段代码阻止了菜单多次点击报错的问题
 
 Vue.use(Contextmenu)
-Vue.use(Canvas)
+// Vue.use(Canvas)
 Vue.use(VueParticles)
 // Vue.prototype.$G6=G6
 Vue.config.productionTip = false

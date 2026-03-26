@@ -14,7 +14,7 @@ module.export = {
         host:'loacalhost',
         proxy:{
             'api/':{
-                target:'https://www.51tagger.com',
+                target:'https://dev.51tagger.com',
                 changeOrigin:true
             }
         }

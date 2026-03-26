@@ -51,11 +51,15 @@ import carteone from "@/components/carte/carteone"
 
 
 let router = new Router({
-  base: '/www.index/',
+  // base: '/www.index/',
   routes: [
     // {redirect: '/calends',默认导航的位置
     {
       path: '/',
+      redirect: '/Login'
+    },
+    {
+      path: '/login',
       redirect: '/Login'
     },
     {
@@ -328,11 +332,11 @@ router.beforeEach((to, from, next) => {
     if (sessionStorage.getItem('key-token') != null) {
       next()
     } else {
-          if( to.fullPath==='/login'){
+          if( to.fullPath==='/Login'){
             next()
         }else{
             alert('请登录')
-            next('/login')
+            next('/Login')
         }
         return
     }
